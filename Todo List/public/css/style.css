@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0px;
+    background-color: #DBE2EF;
+    font-family: "rubik";
+}
+header {
+    background-color: #222831;
+    color: #EEEEEE;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today-banner img {
+    width: 50px;
+}
+.today-banner {
+    background-color: #00ADB5;
+    margin: 5vh;
+    color: #EEEEEE;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+}
+.today-banner p {
+    margin: 20px;
+}
+.container {
+    width: 80vw;
+}
+.todo-item {
+    background-color: white;
+    display: flex;
+    box-shadow: 1px 1px 2px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+input:checked+p {
+    text-decoration: line-through;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+form input {
+    border: none;
+    padding: 10px;
+    width: 99%;
+}
+button {
+    border: none;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #02cdd8;
+}
+footer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
