@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Gemini Solutions</title>
+</head>
+
+<body>
+    <header>
+        Gemini Solutions
+    </header>
+    <main>
+        <div class="myForm">
+            <h2>User Login</h2>
+            <form name="form" onsubmit="return validate()" action="/success.html">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="abc@rst.xyz" onchange="validate()"
+                 required minlength="3">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" onchange="validate()" required minlength="8">
+
+                <button type="submit">Login</button>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <div class="email-error">*Please enter correct Email format</div> -->
+
+
+
+
+
+
+                <!-- <div class="password-error">*Please enter Password in correct format</div> -->
