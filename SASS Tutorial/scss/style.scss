@@ -1,0 +1,75 @@
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/base";
+@import "partials/utility";
+
+@mixin block($myColor, $btnColor) {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    h3 {
+        border: 3px solid $myColor;
+    }
+
+    button {
+        &:hover {
+            background-color: $btnColor;
+        }
+    }
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $color-secondary;
+}
+
+.container {
+    background-color: $color-primary;
+    padding: 10px 50px;
+}
+
+.heading {
+    background-color: $color-secondary;
+}
+
+p {
+    background-color: $color-accent;
+}
+
+.card {
+    @include block(black, $color-primary);
+
+    display: inline-block;
+    background-color: rgb(138, 135, 135);
+    &:hover {
+        background-color: darken();
+        background-color: lighten();
+    }
+    h3 {
+        color: $color-accent;
+    }
+
+    p {
+        padding: 10px;
+    }
+
+    button {
+        padding: 5px 10px;
+
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+}
+
+.box1 {
+    background-color: bisque;
+}
+
+.box2 {
+    @extend .box1;
+}
